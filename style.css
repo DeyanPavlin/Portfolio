@@ -12,6 +12,7 @@
 
 html{
     font-size: 70%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -32,7 +33,7 @@ header{
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     z-index: 100;
 }
 
@@ -43,8 +44,20 @@ header{
     cursor: pointer;
 }
 
+.shortcutSection{
+    display: flex;
+    gap: 50px;
+}
+
+.shortcut{
+    font-size: 2rem;
+    color: #4f6777;
+    font-weight: 800;
+    cursor: pointer;
+}
+
 section{
-    min-height: 80vh;
+    min-height: 95vh;
     padding: 5rem 9% 5rem;
 }
 
@@ -112,13 +125,17 @@ span{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/*Projects and Certificates*/
+
 .projects {
+    
     background-color: #252525;
     padding: 5rem 9%;
     color: white;
 }
 
 .projects h2 {
+    margin-top: 150px;
     font-size: 6rem;
     font-weight: 700;
     margin-bottom: 4rem;
