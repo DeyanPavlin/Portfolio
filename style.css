@@ -196,23 +196,41 @@ span{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-@media(max-width: 995px) {
-    .project-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 @media (max-width: 1000px){
     .home{
         gap: 4rem;
     }
 }
 
+@media(max-width: 995px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects h2{
+        font-size: 5rem;
+    }
+
+    .shortcutSection{
+        display: flex;
+        gap: 20px;
+    }
+    
+    .shortcut{
+        font-size: 1.5rem;
+        color: #4f6777;
+        font-weight: 800;
+        cursor: pointer;
+    }
+    
+}
+
+
 @media(max-width:995px){
     .home{
         flex-direction: column;
-        margin: 5rem 4rem;
+        margin: 5rem 5rem;
     }
 
     .home .home-content h3{
