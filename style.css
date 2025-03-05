@@ -79,12 +79,6 @@ span{
     color: #4f6777;
 }
 
-.home-content h3{
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
 .home-content p{
     font-size: 1.6rem;
 }
@@ -204,6 +198,7 @@ span{
 
 @media(max-width: 995px) {
     .project-container {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -211,19 +206,29 @@ span{
     .projects h2{
         font-size: 5rem;
     }
+    
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centers logo horizontally */
+    }
+    
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem; /* Adjust size if needed */
+        text-decoration: none; /* Optional: Removes underline */
+    }
+
 
     .shortcutSection{
-        display: flex;
-        gap: 20px;
+        display: none;
     }
     
     .shortcut{
-        font-size: 1.5rem;
-        color: #4f6777;
-        font-weight: 800;
-        cursor: pointer;
+     display: none;   
     }
-    
 }
 
 
@@ -231,10 +236,6 @@ span{
     .home{
         flex-direction: column;
         margin: 5rem 5rem;
-    }
-
-    .home .home-content h3{
-        font-size: 2.5rem;
     }
 
     .home-content h1{
